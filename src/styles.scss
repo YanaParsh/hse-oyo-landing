@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: 'Montserrat';
+  font-display: swap;
+  font-weight: 100;
+  src: url('/assets/fonts/Montserrat-Thin.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-display: swap;
+  font-weight: 500;
+  src: url('/assets/fonts/Montserrat-Medium.ttf');
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}

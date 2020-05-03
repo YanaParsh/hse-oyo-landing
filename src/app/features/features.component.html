@@ -1,0 +1,10 @@
+<header class="header">
+  <mat-card *ngFor="let feature of features" class="feature">
+    <mat-icon>
+      {{ feature.icon }}
+    </mat-icon>
+    <mat-card-content>
+      {{ feature.title }}
+    </mat-card-content>
+  </mat-card>
+</header>
