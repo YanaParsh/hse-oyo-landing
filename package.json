@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open",
-    "build": "ng build --prod --deploy-url=\"https://YanaParsh.github.io/hse-oyo-landing\"",
+    "build": "ng build --prod --deploy-url=\"https://YanaParsh.github.io/hse-oyo-landing\" --output-path=\"docs\" --base-href=\"/hse-oyo-landing/\"",
     "lint": "ng lint",
     "prettier:format": "prettier --loglevel log --config ./.prettierrc --ignore-path ./.prettierignore --write \"./**/*.{html,css,scss,json,js,ts}\""
   },
