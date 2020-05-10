@@ -1,5 +1,13 @@
 <header class="header">
-  <h1 class="logo">OYO</h1>
-  <h1 class="title">NOVA GYM</h1>
-  <h2 class="subtitle">A full gym in your hands</h2>
+  <h1 class="title">
+    <span class="logo">OYO</span>
+    NOVA GYM
+  </h1>
+
+  <button class="more-button" mat-stroked-button color="warn" (click)="scrollHostIntoView(scrollTarget)">
+    <span class="more-button__content">
+      More
+    </span>
+  </button>
 </header>
+<div #scrollTarget></div>

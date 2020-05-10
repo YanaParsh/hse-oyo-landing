@@ -1,10 +1,16 @@
-<header class="header">
+<section class="title-wrapper">
+  <h2 class="title">
+    FEATURES
+  </h2>
+</section>
+
+<section class="features-list">
   <mat-card *ngFor="let feature of features" class="feature">
-    <mat-icon>
+    <mat-icon class="icon">
       {{ feature.icon }}
     </mat-icon>
-    <mat-card-content>
+    <span class="text">
       {{ feature.title }}
-    </mat-card-content>
+    </span>
   </mat-card>
-</header>
+</section>

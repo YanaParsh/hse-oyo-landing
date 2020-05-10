@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'application';
+  title = 'Landing';
+
+  constructor(private readonly changeDetectorRef: ChangeDetectorRef) {}
+
+  @HostListener('window:resize')
+  public processResize(): void {
+    this.changeDetectorRef.markForCheck();
+  }
 }

@@ -1,0 +1,20 @@
+<header class="header">
+  <h1 class="title">
+    <span class="logo">Build a fitnes body</span>
+  </h1>
+  <h2>Buy now and get 18 weeks of free programs and over 50 workout videos</h2>
+
+  <section class="button-container">
+    <a href="https://www.oyofitness.com/videos/">
+      <button mat-flat-button>
+        <span class="button-text">
+          WORKOUT VIDEOS
+        </span>
+      </button>
+    </a>
+  </section>
+</header>
+
+<section class="images" #sectionElement>
+  <img *ngFor="let item of exUrls" [src]="item" [width]="sectionElement.offsetWidth / exUrls.length" />
+</section>

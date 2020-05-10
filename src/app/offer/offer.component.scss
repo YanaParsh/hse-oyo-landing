@@ -1,12 +1,30 @@
-.header {
-  background-image: url('/assets/SecondImage.png');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
+:host {
+  padding: 16px 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  height: 50vh;
+  background: white;
+}
+
+.title {
+  font-size: 10vh;
+  font-weight: 100;
+  font-family: 'Montserrat';
+  line-height: 0.8;
+  color: black;
+}
+
+.title-wrapper,
+.button-container {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.button-text {
+  padding: 0 16px;
 }

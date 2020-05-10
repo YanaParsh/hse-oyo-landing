@@ -13,7 +13,9 @@
   font-weight: 500;
   src: url('/assets/fonts/Montserrat-Medium.ttf');
 }
-
+* {
+  box-sizing: border-box;
+}
 html,
 body {
   height: 100%;
@@ -21,4 +23,5 @@ body {
 body {
   margin: 0;
   font-family: Roboto, 'Helvetica Neue', sans-serif;
+  overflow: hidden auto;
 }

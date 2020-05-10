@@ -1,0 +1,23 @@
+:host {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden visible;
+  position: relative;
+
+  background-color: rgba(0, 0, 0, 0.75);
+  background-image: url('/assets/second-image.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+}
+
+app-links {
+  width: 100%;
+}
+
+.buy-button {
+  position: absolute;
+  bottom: 5vh;
+}

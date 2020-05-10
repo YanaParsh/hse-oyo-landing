@@ -1,0 +1,24 @@
+<section class="title-wrapper">
+  <h2 class="title">
+    Become a backer now to get:
+  </h2>
+</section>
+
+<section class="reasons-list">
+  <mat-card *ngFor="let reason of reasons" class="reason">
+    <mat-icon class="icon">
+      {{ reason.icon }}
+    </mat-icon>
+    <span class="text">
+      {{ reason.title }}
+    </span>
+  </mat-card>
+</section>
+<a href="https://www.kickstarter.com/projects/oyo/oyo-nova-gym/description">
+  <button class="buy-button" mat-stroked-button color="warn">
+    <span class="buy-button__content">
+      Buy
+    </span>
+  </button>
+</a>
+<div #scrollTarget></div>

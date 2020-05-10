@@ -1,0 +1,42 @@
+.header {
+  position: relative;
+
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: red;
+}
+
+.title {
+  font-size: 10vh;
+  font-weight: 100;
+  font-family: 'Montserrat';
+  line-height: 1;
+  align-items: center;
+  justify-content: center;
+
+  .logo {
+    color: black;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.subtitle {
+  font-size: 7vh;
+  font-weight: 500;
+  font-family: 'Montserrat';
+  align-items: center;
+  justify-content: center;
+}
+
+.promo-button {
+  bottom: -10vh;
+}
+
+.images {
+  width: 100%;
+}

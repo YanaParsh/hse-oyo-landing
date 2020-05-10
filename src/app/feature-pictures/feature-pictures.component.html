@@ -1,0 +1,4 @@
+<section class="feature-pictures" #sectionElement>
+  <h1 class="title">Train anywhere</h1>
+  <img *ngFor="let item of imagesUrls" [src]="item" [width]="(sectionElement.offsetWidth / imagesUrls.length) * 2" />
+</section>

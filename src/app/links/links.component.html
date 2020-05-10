@@ -1,9 +1,13 @@
 <a
   class="link"
-  *ngFor="let link of links"
-  [href]="link.url"
+  *ngFor="let item of links"
+  [href]="item.url"
   target="_blank"
   [style.width]="'calc(100% / ' + links.length + ')'"
 >
-  <div class="link-content"><mat-icon>fiber_manual_record</mat-icon>{{ link.title }}</div>
+  <div class="link-content">
+    <object class="icon" type="image/svg+xml" [data]="item.iconSrc"> </object>
+
+    {{ item.title }}
+  </div>
 </a>

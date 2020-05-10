@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-
 @Component({
-  selector: 'app-top-image',
-  templateUrl: './top-image.component.html',
-  styleUrls: ['./top-image.component.scss']
+  selector: 'app-fitnes-picture',
+  templateUrl: './fitnes-picture.component.html',
+  styleUrls: ['./fitnes-picture.component.scss']
 })
-export class TopImageComponent {
+export class FitnesPictureComponent {
   public scrollHostIntoView(element: HTMLElement): void {
     element.scrollIntoView({ behavior: 'smooth' });
   }

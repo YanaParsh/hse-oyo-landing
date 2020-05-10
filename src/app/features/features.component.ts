@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
 interface Feature {
   title: string;
   icon: string;
@@ -8,15 +9,11 @@ interface Feature {
   templateUrl: './features.component.html',
   styleUrls: ['./features.component.scss']
 })
-export class FeaturesComponent implements OnInit {
+export class FeaturesComponent {
   features: Feature[] = [
-    { title: 'Training at home', icon: 'home' },
-    { title: 'Training while traveling', icon: 'explore' },
-    { title: 'Training at office', icon: 'business_center' },
-    { title: 'Training outdoors', icon: 'nature' }
+    { title: 'Skip the health club round-trips and fees', icon: 'schedule' },
+    { title: 'Dublicate the same exercises and results', icon: 'fitness_center' },
+    { title: 'Build and sculpt all your body', icon: 'accessibility_new' },
+    { title: 'Proven NASA technology', icon: 'public' }
   ];
-
-  constructor() {}
-
-  ngOnInit(): void {}
 }

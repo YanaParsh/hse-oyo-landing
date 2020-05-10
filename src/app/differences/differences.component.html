@@ -1,1 +1,14 @@
-<p>differences works!</p>
+<section class="title-wrapper">
+  <h2 class="title">
+    Why NOVA Gym is better?
+  </h2>
+</section>
+
+<section class="difference-list">
+  <div *ngFor="let difference of differences; index as index" class="difference">
+    <h2 class="index">{{ index + 1 }}</h2>
+    <span class="text">
+      {{ difference.title }}
+    </span>
+  </div>
+</section>
