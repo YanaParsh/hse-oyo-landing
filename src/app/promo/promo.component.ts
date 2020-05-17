@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./promo.component.scss']
 })
 export class PromoComponent {
-  public readonly exUrls: string[] = ['/assets/ex-sit.jpg', '/assets/ex-up.jpg', '/assets/ex-down.jpg'];
+  public readonly exUrls: string[] = ['assets/ex-sit.jpg', 'assets/ex-up.jpg', 'assets/ex-down.jpg'];
 }

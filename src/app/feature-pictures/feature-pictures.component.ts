@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class FeaturePicturesComponent {
   public readonly imagesUrls: string[] = [
-    '/assets/at-home.jpg',
-    '/assets/at-office.jpg',
-    '/assets/at-travel.jpg',
-    '/assets/outdoors.jpg'
+    'assets/at-home.jpg',
+    'assets/at-office.jpg',
+    'assets/at-travel.jpg',
+    'assets/outdoors.jpg'
   ];
 }
