@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-feature-pictures',
@@ -6,10 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./feature-pictures.component.scss']
 })
 export class FeaturePicturesComponent {
-  public readonly imagesUrls: string[] = [
+  constructor(private readonly domSanitizer: DomSanitizer) {}
+
+  public readonly imagesUrls: SafeStyle[] = [
     'assets/at-home.jpg',
-    'assets/at-office.jpg',
     'assets/at-travel.jpg',
+    'assets/at-office.jpg',
     'assets/outdoors.jpg'
-  ];
+  ].map((unsafeUrl) => this.domSanitizer.bypassSecurityTrustStyle(`url(${unsafeUrl})`));
 }

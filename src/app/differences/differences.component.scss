@@ -1,40 +1,61 @@
 :host {
-  padding: 16px 32px;
+  padding: 10rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: fit-content;
   background: #1f1f1f;
 }
 .difference {
-  margin-bottom: 8px;
-  width: calc(33% - 32px);
+  margin-bottom: 0.5rem;
+  width: calc(100% / 3);
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex;
-  padding-left: 32px;
+  justify-content: center;
+  padding-left: 2rem;
   position: relative;
-  margin: 24px 16px;
+  padding: 1.5rem 1rem;
 }
 .difference-list {
-  height: 50vh;
+  height: fit-content;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
+
+  @media only screen and (max-width: 719px) {
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    .difference {
+      margin-bottom: 3.5rem;
+      width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 720px) and (max-width: 1439px) {
+    justify-content: flex-start;
+    flex-direction: column;
+
+    .difference {
+      margin-bottom: 3.5rem;
+      width: calc(100% / 2);
+    }
+  }
 }
 
 .title {
-  font-size: 8vh;
+  font-size: 2rem;
   font-weight: 100;
   font-family: 'Montserrat';
   line-height: 0.8;
   color: red;
-  padding: 32px;
+  padding: 2rem;
 }
 
 .title-wrapper {
@@ -47,17 +68,19 @@
 .index {
   position: absolute;
   color: red;
-  margin: 0 0 0 8px;
-  font-size: 128px;
+  margin: 0 0 0 0.5rem;
+  font-size: 8rem;
   opacity: 0.3;
-  top: 8px;
-  left: 0;
+  top: 0.5rem;
+  left: 50%;
   user-select: none;
   pointer-events: none;
   font-weight: 600;
-  transform: translateX(-25%);
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 .text {
   font-size: 1.125rem;
+  z-index: 2;
 }

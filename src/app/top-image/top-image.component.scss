@@ -16,11 +16,12 @@
   align-items: center;
   justify-content: center;
 
-  box-shadow: 0 5vh 5vh #010101;
+  box-shadow: 0 2.25rem 2.25rem #010101;
+  padding: 1rem;
 }
 
 .title {
-  font-size: 10vh;
+  font-size: 4.5rem;
   font-weight: 100;
   font-family: 'Montserrat';
   line-height: 0.8;
@@ -31,12 +32,12 @@
 }
 
 .subtitle {
-  font-size: 7vh;
+  font-size: 3.15rem;
   font-weight: 500;
   font-family: 'Montserrat';
 }
 
 .more-button {
   position: absolute;
-  bottom: 5vh;
+  bottom: 2.25rem;
 }

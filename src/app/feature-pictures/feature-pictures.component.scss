@@ -2,18 +2,45 @@
   width: 100%;
 }
 
+@function getImageHeight($width) {
+  $imgWidth: 680;
+  $imgHeight: 453;
+  $ratio: $imgWidth / $imgHeight;
+  @return calc(#{$width} / #{$ratio});
+}
+
 .feature-pictures {
-  width: 100%;
+  width: 100vw;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  flex-wrap: wrap;
+
+  &__image {
+    width: 25vw;
+    height: getImageHeight(25vw);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0 0 3.5rem;
+
+    @media screen and (max-width: 1439px) {
+      width: 50vw;
+      height: getImageHeight(50vw);
+    }
+  }
 }
 
 .title {
   margin: 0;
-  padding: 8px;
+  padding: 0.5rem;
   width: 100%;
   background: white;
-  font-size: 10vh;
-  height: 12vh;
+  font-size: 3rem;
+  height: 3.5rem;
   font-weight: 600;
   font-family: 'Montserrat';
   line-height: 0.8;
@@ -24,5 +51,9 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -100%);
+
+  @media screen and (min-width: 1440px) {
+    top: 100%;
+  }
 }
