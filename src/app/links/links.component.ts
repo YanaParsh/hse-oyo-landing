@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 interface Link {
@@ -13,12 +13,14 @@ interface Link {
   styleUrls: ['./links.component.scss']
 })
 export class LinksComponent {
+  public hoveredUrl: string = null;
+
   links: Link[] = [
     {
       title: 'Website',
       url: 'https://www.oyofitness.com/our-team/',
       iconSrc: 'assets/globe-outline.svg',
-      color: 'orange'
+      color: 'black'
     },
     {
       title: 'Instagram',
@@ -30,13 +32,13 @@ export class LinksComponent {
       title: 'Facebook',
       url: 'https://www.facebook.com/OYOFitness/',
       iconSrc: 'assets/logo-facebook.svg',
-      color: 'orange'
+      color: 'blue'
     },
     {
       title: 'YouTube',
       url: 'https://www.youtube.com/oyofitness',
       iconSrc: 'assets/logo-youtube.svg',
-      color: 'orange'
+      color: 'red'
     }
   ].map((item) => ({
     ...item,
@@ -44,4 +46,9 @@ export class LinksComponent {
   }));
 
   constructor(private readonly domSanitizer: DomSanitizer) {}
+
+  @HostListener('mouseleave')
+  public processMouseLeave(): void {
+    this.hoveredUrl = null;
+  }
 }

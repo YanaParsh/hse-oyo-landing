@@ -1,11 +1,12 @@
 <a
   class="link"
+  [ngClass]="item.url === hoveredUrl ? 'link_' + item.color : null"
   *ngFor="let item of links"
   [href]="item.url"
   target="_blank"
   [style.width]="'calc(100% / ' + links.length + ')'"
 >
-  <div class="link-content">
+  <div class="link-content" (mouseenter)="hoveredUrl = item.url">
     <object class="icon" type="image/svg+xml" [data]="item.iconSrc"> </object>
 
     {{ item.title }}

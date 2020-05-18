@@ -1,3 +1,10 @@
+@function getImageHeight($width) {
+  $imgWidth: 936;
+  $imgHeight: 844;
+  $ratio: $imgWidth / $imgHeight;
+  @return calc(#{$width} / #{$ratio});
+}
+
 .header {
   position: relative;
 
@@ -39,4 +46,22 @@
 
 .images {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  &__item {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100vw / 3);
+    height: getImageHeight(calc(100vw / 3));
+  }
+}
+
+button {
+  font-size: 1.5rem;
+  font-weight: 100;
+  padding: 0.5rem 1.75rem;
 }

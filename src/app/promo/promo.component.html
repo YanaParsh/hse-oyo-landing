@@ -16,5 +16,5 @@
 </header>
 
 <section class="images" #sectionElement>
-  <img *ngFor="let item of exUrls" [src]="item" [width]="sectionElement.offsetWidth / exUrls.length" />
+  <div *ngFor="let item of backgroundImageStyles" [style]="item" class="images__item"></div>
 </section>

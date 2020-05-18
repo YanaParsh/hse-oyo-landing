@@ -13,8 +13,20 @@
   text-decoration: none;
   transition: 0.3s all;
 
-  &:hover {
-    background-color: red;
+  &_red {
+    background-color: #c4302b;
+  }
+
+  &_black {
+    background-color: black;
+  }
+
+  &_purple {
+    background-color: #c13584;
+  }
+
+  &_blue {
+    background-color: #3b5998;
   }
 
   .link-content {
