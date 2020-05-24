@@ -9,12 +9,14 @@
   position: relative;
 
   width: 100%;
-  height: 55vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: firebrick;
+
+  padding: 1rem;
 }
 
 .title {

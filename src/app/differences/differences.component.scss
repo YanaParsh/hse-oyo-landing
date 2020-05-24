@@ -6,6 +6,10 @@
   justify-content: center;
   height: fit-content;
   background: #1f1f1f;
+
+  @media only screen and (max-width: 1279px) {
+    padding: 2rem;
+  }
 }
 .difference {
   margin-bottom: 0.5rem;
@@ -56,6 +60,10 @@
   line-height: 0.8;
   color: red;
   padding: 2rem;
+
+  @media only screen and (max-width: 1279px) {
+    font-size: 10vh;
+  }
 }
 
 .title-wrapper {

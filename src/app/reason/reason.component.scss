@@ -27,7 +27,16 @@
   align-items: center;
   justify-content: space-between;
 
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: 1279px) {
+    width: 100%;
+    height: fit-content;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1280px) and (max-width: 1439px) {
     width: calc(50% - 1rem);
 
     flex-direction: column;
